@@ -1,0 +1,8 @@
+Created server and client docker images
+Executed both client and server on windows
+Able to communicate between client and Server
+Only single client and server connection
+server will start first (docker run -it -p5555:5555 --network=tcp_net1 tcp-server:1)
+client starts next (docker run -it tcp-client:1 172.17.0.2)
+
+provide server container address by inspecting the tcp_net1 from docker inspect command to the clinet docker run command
